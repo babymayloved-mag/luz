@@ -64,7 +64,7 @@
   /* เลขสไลด์จาง ๆ เป็นพื้นหลัง */
   .slide .ghost-no{
     position:absolute;
-    right:6vw;bottom:4vh;
+    right:6vw;bottom:12vh;
     font-size:clamp(7rem,22vw,16rem);
     font-weight:800;line-height:1;
     color:rgba(0,0,0,.035);
@@ -176,12 +176,16 @@
   /* ===== OVERVIEW ===== */
   .overview-grid{
     display:grid;grid-template-columns:1.1fr 1fr;gap:4vw;
-    align-items:center;margin-top:.5rem;
+    align-items:start;margin-top:.5rem;
   }
   .stat-row{display:flex;gap:2.4rem;margin-top:2.4rem;flex-wrap:wrap;}
   .stat .num{
     font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;
     color:var(--black);line-height:1;
+  }
+  .stat .num.txt{
+    font-size:clamp(1.2rem,2vw,1.6rem);
+    letter-spacing:.02em;
   }
   .stat .lbl{
     font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
@@ -204,7 +208,7 @@
 
   /* ===== PHASE 1 ===== */
   .phase-head{
-    display:flex;align-items:flex-end;justify-content:space-between;
+    display:flex;align-items:flex-start;justify-content:space-between;
     flex-wrap:wrap;gap:1rem;margin-bottom:2.2rem;
   }
   .phase-tag{
@@ -468,7 +472,7 @@
             <div class="lbl">คอนเซ็ปต์เล่าเรื่อง</div>
           </div>
           <div class="stat">
-            <div class="num">Pre-open</div>
+            <div class="num txt">Pre-open</div>
             <div class="lbl">สร้างฐานลูกค้าก่อนเปิด</div>
           </div>
         </div>
